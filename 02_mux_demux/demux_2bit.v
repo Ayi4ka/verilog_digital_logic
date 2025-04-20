@@ -1,8 +1,9 @@
-module mux_2bit_ternary (
+module demux_2bit (
 	input sel, 
 	input a, 
-	input b, 
+	output b, 
 	output c
 );
-assign c = sel?b:a;
+assign b = ~sel&a;
+assign c = sel&a;
 endmodule 
