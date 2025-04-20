@@ -1,33 +1,44 @@
-# 1-bit and 4-bit Full Adders / Одноразрядный и 4-разрядный сумматоры
+# Multiplexer & Demultiplexer Modules / Мультиплексоры и Демультиплексоры
 
-This project contains Verilog modules implementing:
-- A 1-bit full adder (`summ`)
-- A 4-bit full adder built by chaining four 1-bit adders (`summ1`)
-
-💡 The modules use basic logic gates (`&`, `|`, `^`) and demonstrate hierarchical instantiation.
-
-📎 RTL View is included for 4-bit schematic.
+This project includes Verilog modules implementing:
+- 2-input MUX using logic ops
+- 2-input MUX using ternary op
+- 4-input MUX using case logic
+- 2-output DEMUX
+- 4-output DEMUX
 
 ---
 
-## Features
+## 🔧 Features
 
-- ✅ Modular design
-- ✅ Fully testable on FPGA
-- ✅ Two implementation methods: schematic + RTL-based
-- ✅ Simulation-ready
+- ✨ Clean separation of logic
+- 🧠 Useful for teaching and synthesis
+- 🧪 Tested on FPGA (with test tables included)
 
+## Files
+
+- `mux_2bit_logic.v`
+- `mux_2bit_ternary.v`
+- `demux_2bit.v`
+- `mux_4bit.v`
+- `demux_4bit.v`
+
+---
 
 ## 📘 Описание на русском
 
-Проект содержит:
-- Одноразрядный полный сумматор (`summ`)
-- 4-разрядный сумматор на основе иерархии (`summ1`)
+Проект включает модули:
+- Мультиплексоры на 2 и 4 входа
+- Демультиплексоры на 2 и 4 выхода
+- Разные методы описания: логические и тернарные операторы
+- Модули прошиты на ПЛИС и проверены
 
-📎 Диаграммы RTL и тестирование на ПЛИС выполнены.
+![alt text](image.png)
 
 ![alt text](image-1.png)
 
+![alt text](image-2.png)
+
 ![alt text](image-3.png)
 
-![alt text](image-2.png)
+![alt text](image-4.png)
