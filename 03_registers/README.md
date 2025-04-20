@@ -32,3 +32,22 @@ always @(posedge clk or negedge rst_n) begin
       o_o <= i;
 end
 assign o = ~o_o;
+
+Register with synchronous reset on clock edge. | Регистр с синхронным сбросом по фронту такта. |
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+Register with asynchronous reset. | Регистр с асинхронным сбросом.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+Register with enable signal. | Регистр с сигналом разрешения записи. |
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
